@@ -16,8 +16,20 @@ body,
   font-weight: 100 !important;
 }
 
+.text-light a {
+  color: #fff !important;
+}
+.text-light a:hover {
+  color: var(--brand-primary) !important;
+}
+
 .shake {
   display: inline-block !important;
+}
+
+.always-shake {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .shake:hover {
