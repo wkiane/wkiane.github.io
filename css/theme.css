@@ -532,13 +532,13 @@
         }
         
         .footer {
+            border-top: 1px solid #f1f1f1;
             position: relative;
-            height: 700px;
-            margin-top: 4rem
+            padding: 60px 0;
         }
         
         .footer-content {
-            background: #fff;
+            /*background: #fff;*/
             position: relative;
             z-index: 88;
             padding: 2rem 2rem 2rem 0
