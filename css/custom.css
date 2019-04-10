@@ -119,6 +119,10 @@ body,
     height: auto;
     padding-bottom:80px
   }
+
+  .hero__headline {
+    font-size: 3.5em;
+  }
   
   .hero-slant {
     top: 570px;
