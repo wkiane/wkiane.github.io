@@ -1,9 +1,39 @@
+var send_form = function(e, form){
+	e.preventDefault();
+	var serializeDados = form.serialize();
+	var btn = form.find("input[type='submit']");
+
+	console.log(serializeDados);
+	 
+	$.ajax({
+		url: 'http://localhost/willa_forssm/',
+		dataType: 'html',
+		type: 'POST',
+		data: serializeDados,
+		beforeSend: function() {
+			btn.val( "Aguarde..." );
+		},
+		success: function(data, textStatus) {
+			form.hide();
+			console.log(textStatus);
+			console.log(data);
+			
+			$('#enviado').fadeIn();
+
+		},
+		error: function(xhr,er) {
+			$('#erro').fadeIn();
+			console.log('Error ' + xhr.status + ' - ' + xhr.statusText + ' - Tipo de erro: ' + er);
+		}
+	});     
+}
+
 $(document).ready(function() {
 	$('#form_footer').submit(function(e) {
 		e.preventDefault();
-
-		$(this).hide();
-		$('#enviado').fadeIn();
+		send_form(e, $(this));
+		//$(this).hide();
+		//$('#enviado').fadeIn();
 	});
 
 
