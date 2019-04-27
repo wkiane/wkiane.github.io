@@ -6,7 +6,7 @@ var send_form = function(e, form){
 	console.log(serializeDados);
 	 
 	$.ajax({
-		url: 'http://localhost/willa_form/',
+		url: 'http://localhost/willa_form/index.php',
 		dataType: 'html',
 		type: 'POST',
 		data: serializeDados,
