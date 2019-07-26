@@ -460,9 +460,9 @@
         }
         
         @media (max-width:850px) {
-            .header .email {
+            /*.header .email {
                 display: none
-            }
+            }*/
         }
         
         .header .email .email-link {
