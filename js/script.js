@@ -36,6 +36,10 @@ $(document).ready(function() {
 		//$('#enviado').fadeIn();
 	});
 
+	setInterval(function() {
+		$('.whatsapp-floating').toggleClass('always-shake');
+	}, 3000);
+
 
 });
 

@@ -44,6 +44,7 @@ body,
 .always-shake {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+
 }
 
 .shake:hover {
@@ -116,9 +117,19 @@ body,
 }
 
 
-
 .header * {
   color: var(--brand-secondary) !important;
+}
+
+.whatsapp-floating {
+  z-index: 10000;
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  bottom: 30px;
+  right: 30px;
+  background-image: url('../img/whats.png');
+  background-size: cover;
 }
 
 
